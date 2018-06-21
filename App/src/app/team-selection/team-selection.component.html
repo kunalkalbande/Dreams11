@@ -1,6 +1,6 @@
-<div class="cointainer" *ngIf="allMatches">
-    <ng-container *ngFor="let match of allMatches">
-        <div class="row teamPlayer" *ngFor="let player of match.MatchPlayers  | playerFilterByRole: role">
+<div class="cointainer" *ngIf="matchInfo">
+    <ng-container  *ngFor="let player of matchInfo.MatchPlayers  | playerFilterByRole: role">
+        <div class="row teamPlayer">
             <div class="col-md-2">
                 <img src="{{player.PlayerImage}}" width="70" height="70" class="rounded img" />
             </div>

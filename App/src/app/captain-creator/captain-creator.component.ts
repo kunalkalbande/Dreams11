@@ -5,7 +5,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 
 
 
-import { allMatches } from '../models/allMatches'
+import { matchInfo } from '../models/allMatches'
 import 'rxjs/add/operator/map';
 import { Http, Headers, Response, RequestOptions, RequestMethod } from '@angular/http';
 
@@ -27,7 +27,7 @@ export class CaptainCreatorComponent implements OnInit {
   title = 'JSON to Table Example';
   count: any;
   constructor(private http: HttpClient) { }
-  allMatches: allMatches[];
+  matchInfo: matchInfo;
   matchPlayers: matchPlayers[];
 
 
@@ -39,8 +39,8 @@ export class CaptainCreatorComponent implements OnInit {
 
       data => {
 
-        this.allMatches = data as allMatches[];	 // FILL THE ARRAY WITH DATA.      	
-        console.log(this.allMatches);
+        this.matchInfo = data as matchInfo;	 // FILL THE ARRAY WITH DATA.      	
+        console.log(this.matchInfo);
       },
       (err: HttpErrorResponse) => {
     

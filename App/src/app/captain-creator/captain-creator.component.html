@@ -6,10 +6,10 @@
 
     <h4> CRICKET TEAM</h4>
   </div>
-  <div class="alert alert-light" role="alert" *ngIf="allMatches">
-    <div class="row" *ngFor="let match of allMatches">
-      <div class="col-md-4">{{match.Name}}</div>
-      <div class="col-md-4" style="color: #c51d23">{{match.Date}}</div>
+  <div class="alert alert-light" role="alert" *ngIf="matchInfo">
+    <div class="row" >
+      <div class="col-md-4">{{matchInfo.Name}}</div>
+      <div class="col-md-4" style="color: #c51d23">{{matchInfo.Date}}</div>
       <div class="col-md-4 text-right">
         <a href="https://skillup.dream11.com/cricket/afgh-vs-ban-2nd-t20i-pre-match-analysis/">GURU</a>
       </div>
@@ -30,7 +30,7 @@
       </div>
       <div>
           <div class="label" style="padding: 10px 0;font-weight: bold;">BOWLERS</div>
-          <app-team-selection role="Bowler"></app-team-selection>
+          <app-team-selection role="Blower"></app-team-selection>
       
         </div>
 </div>

@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 import 'rxjs/add/operator/map';
 
-import { allMatches } from '../models/allMatches';
+import { matchInfo } from '../models/allMatches';
 import { matchPlayers } from '../models/matchPlayer';
 import { HttpErrorResponse, HttpClient } from '@angular/common/http';
 import { LoginInfo } from '../models/LoginInfo'
@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
   title = 'JSON to Table Example';
   count: any;
   login: any;
-  loginDetails: loginDetails[];
+  matchInfo: matchInfo;
   constructor(private http: HttpClient) { }
   // allMatches: allMatches[];
   matchPlayers: matchPlayers[];
