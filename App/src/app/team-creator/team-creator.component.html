@@ -4,16 +4,16 @@
                 
            
         <div class="row teamPlayer">
-            <div class="col-md-2" >
+            <div class="col-md-3" >
                 <img src="{{player.PlayerImage}}" width="70" height="70" class="rounded img" />
             </div>
-            <div class="matchCardInfo_9f857 col-md-4" >
+            <div class="matchCardInfo_9f857 col-md-5" >
                 <div class="col-xs-12"> {{player.FirstName}}  {{player.LastName}}</div>
                 <div class="timer__text col-xs-12">
                     <div>{{player.Address}} | Points: {{player.Points}}  </div>
                 </div>
             </div>
-            <div class="col-md-4"></div>
+            <div class="col-md-1"></div>
             <div class="col-md-2 text-right">{{player.Credits}}
            <input type="checkbox" id="playerCheck" (change)="stateChanged(player.IsSelected)"  [(ngModel)]="player.IsSelected"/>
 
