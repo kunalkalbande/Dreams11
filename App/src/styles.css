@@ -4,7 +4,7 @@ body{background:url(./assets/images/desktop-pwa_2.jpg)0 0 no-repeat; background-
 .cricketorList{ height: 50px; background: #c51d23;box-shadow: 2px 2px 2px #ccc; position: relative}
 .cricketTitle{border-bottom:2px solid #fff;bottom: 0;width: 100%;left: 0; color: #fff;position: absolute }
 .cricketTitle h4{font-weight: normal; padding-left: 8px;}
-.matchListContainer{background: #fff;width: 50%;max-height: 871px;min-height: 800px;overflow: auto;}
+.matchListContainer{background: #fff;width: 50%;max-height: 900px;min-height: 867px;overflow: auto;}
 .filterSeries{text-transform: uppercase;font-size: 11px;}
 table, th, td {
     border: 1px solid black;
@@ -130,8 +130,7 @@ md-tab-group {
         display: -ms-flexbox;   
         display: flex;
         left:0;
-      
-       
+           
         flex-direction: column;
        
         -ms-flex-pack: end;
@@ -139,7 +138,7 @@ md-tab-group {
     }
     
     .ctFooter_07b1f {
-        max-width: 639px;
+        max-width: 33.33%;
         z-index: 2;
     }
     .teamPreviewButtonWrapper_129a4 {

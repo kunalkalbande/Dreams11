@@ -6,10 +6,10 @@
 
         <h4> CRICKET TEAM</h4>
     </div>
-    <div class="alert alert-light" role="alert" *ngIf="allMatches">
-        <div class="row" *ngFor="let match of allMatches">
-            <div class="col-md-4">{{match.Name}}</div>
-            <div class="col-md-4" style="color: #c51d23">{{match.Date}}</div>
+    <div class="alert alert-light" role="alert" *ngIf="matchInfo">
+        <div class="row">
+            <div class="col-md-4">{{matchInfo.Name}}</div>
+            <div class="col-md-4" style="color: #c51d23">{{matchInfo.Date}}</div>
             <div class="col-md-4 text-right">
                 <a href="https://skillup.dream11.com/cricket/afgh-vs-ban-2nd-t20i-pre-match-analysis/">GURU</a>
             </div>
@@ -99,25 +99,25 @@
             </p-tabPanel>
         </p-tabView>
     </div>
-
-  
-</div>
-<!-- <div class="create-team__team-selector__footer text-upper ctFooter_07b1f">
+    <div class="create-team__team-selector__footer text-upper ctFooter_07b1f">
        
         <div class="create-team__team-selector__footer-action-container text-upper">
-            <div class="row" style="width: 700px;">
+            <div class="row" style="width: 100%;">
                 <div class="col-md-1 text-center">
-                        <span class="text-white scoreFont" >{{allMatches[0].MatchPlayers[0].PlayerId}}</span> YOR
-
+                        <label class="text-white scoreFont" id="lblCounter"></label> YOR
+    
                </div>
                 <div class="col-md-1 text-center"> <span class="text-white scoreFont">0</span> NOR</div>
                 <div class="col-md-2 text-center" style="border-right: 1px dashed;"> <span class="scoreFont"><span class="text-white">0</span>/11</span> PLAYERS</div>
-                <div class="col-md-2 text-center"><span  class="scoreFont">100/100 </span> <br/> CREDITS LEFT</div>
+                <div class="col-md-3 text-center"><span  class="scoreFont">100/100 </span> <br/> CREDITS LEFT</div>
                 <div class="col-md-3"></div>
             <div class="col-md-2">
-                <a href="#" routerLink="/createCaptain">   <button type="button" class="btn btn-sm btn-outline-secondary " style="margin-top: 12px">NEXT</button></a>
-              
+                <a href="#" routerLink="/createCaptain">  
+                     <button type="button" class="btn btn-sm btn-outline-secondary " style="margin-top: 12px">NEXT</button>
+                    </a>              
             </div>
         </div>
         </div>
-    </div> -->
+    </div>
+  
+</div>

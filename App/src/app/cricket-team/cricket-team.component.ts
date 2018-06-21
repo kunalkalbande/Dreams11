@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpErrorResponse } from '@angular/common/http';
 
-import{allMatches} from'../models/allMatches';
+import{matchInfo} from'../models/allMatches';
 import{LoginInfo} from'../models/LoginInfo';
 import 'rxjs/add/operator/map';
 import {  Headers } from '@angular/http';
@@ -24,7 +24,7 @@ export class CricketTeamComponent implements OnInit {
   @Input() role: string;
   title = 'JSON to Table Example';
   constructor(private http: HttpClient) { }
-  allMatches: allMatches[];
+  matchInfo: matchInfo;
   matchPlayers: matchPlayers[];
 
   ngOnInit() {
@@ -38,8 +38,8 @@ export class CricketTeamComponent implements OnInit {
     this.http.get('http://idtp285/api/GetMatch/12').subscribe(
 
       data => {        
-        this.allMatches = data as allMatches[];	 // FILL THE ARRAY WITH DATA.      	
-        console.log(this.allMatches);
+        this.matchInfo = data as matchInfo;	 // FILL THE ARRAY WITH DATA.      	
+        console.log(this.matchInfo);
       },
       (err: HttpErrorResponse) => {
         //  console.log (err.message);

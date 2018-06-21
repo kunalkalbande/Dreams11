@@ -1,6 +1,6 @@
 import { matchPlayers } from "./matchPlayer";
 
-export interface allMatches {
+export interface matchInfo {
     Id: number;
     Name: string;
     SeriesName: string;

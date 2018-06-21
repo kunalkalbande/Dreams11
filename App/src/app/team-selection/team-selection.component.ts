@@ -3,7 +3,7 @@ import {TableModule} from 'primeng/table';
 import { HttpClient } from '@angular/common/http';
 import { HttpErrorResponse } from '@angular/common/http';
 
-import { allMatches } from '../models/allMatches'
+import { matchInfo } from '../models/allMatches'
 import 'rxjs/add/operator/map';
 import { Http, Headers, Response, RequestOptions, RequestMethod } from '@angular/http';
 
@@ -30,7 +30,7 @@ export class TeamSelectionComponent implements OnInit {
   headers: Headers;
   editUserForm: any;
   constructor(private http: HttpClient) { }
-  allMatches: allMatches[];
+  matchInfo: matchInfo[];
   matchPlayers: matchPlayers[];
   userPlayer:UserPlayer[];
   saveSuccess: boolean;
@@ -45,7 +45,7 @@ export class TeamSelectionComponent implements OnInit {
 
       data => {
 
-        this.allMatches = data as allMatches[];	 // FILL THE ARRAY WITH DATA.      	
+        this.matchInfo = data as matchInfo[];	 // FILL THE ARRAY WITH DATA.      	
     //    console.log(this.allMatches);
       },
       (err: HttpErrorResponse) => {
@@ -60,11 +60,11 @@ export class TeamSelectionComponent implements OnInit {
 
   
   stateChanged(playerId) {
-    let allmatchPlayers = this.allMatches
+    let allmatchPlayers = this.matchInfo
     var i;
     var count = 0;
   debugger;
-    let matchedPlayerCount = this.allMatches.map(match => {      
+    let matchedPlayerCount = this.matchInfo.map(match => {      
       return match.MatchPlayers.filter(player => player.IsSelected).length })
     var result = matchedPlayerCount.reduce((a, b) => a + b, 0)
     let key = 'Item 1';
@@ -79,7 +79,7 @@ export class TeamSelectionComponent implements OnInit {
 
   onSubmit(): void {
 debugger;
-var jsonData = JSON.stringify(this.allMatches);
+var jsonData = JSON.stringify(this.matchInfo);
     const req = this.http.post('http://idtp285/api/InsertUser', {
       jsonData
     })

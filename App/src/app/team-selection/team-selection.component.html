@@ -1,16 +1,16 @@
 <div class="cointainer" *ngIf="allMatches">
     <ng-container *ngFor="let match of allMatches">
-        <div class="row teamPlayer" *ngFor="let person of match.MatchPlayers  | playerFilterByRole: role">
+        <div class="row teamPlayer" *ngFor="let player of match.MatchPlayers  | playerFilterByRole: role">
             <div class="col-md-2">
-                <img src="{{person.PlayerImage}}" width="70" height="70" class="rounded img" />
+                <img src="{{player.PlayerImage}}" width="70" height="70" class="rounded img" />
             </div>
             <div class="matchCardInfo_9f857 col-md-4" >
-                <div class="col-xs-12"> {{person.FirstName}}  {{person.LastName}}</div>
+                <div class="col-xs-12"> {{player.FirstName}}  {{player.LastName}}</div>
                 <div class="timer__text col-xs-12">
-                    <div>{{person.Address}} | Points: {{person.Points}}  </div>
+                    <div>{{player.Address}} | Points: {{player.Points}}  </div>
                 </div>
             </div>
-            <div class="col-md-4">  <input type="checkbox" id="playerCheck" (change)="stateChanged(person.PlayerId)"  [(ngModel)]="person.IsSelected"/></div>
+            <div class="col-md-4">  <input type="checkbox" id="playerCheck" (change)="stateChanged(player.PlayerId)"  [(ngModel)]="player.IsSelected"/></div>
             <div class="col-md-2 text-right">
               <a href="javascript:void(0)" class="captainC">C</a> <a href="javascript:void(0)" class="captainVC">VC</a>
             </div>

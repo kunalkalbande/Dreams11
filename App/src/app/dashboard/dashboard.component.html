@@ -13,25 +13,25 @@
     
     <div class="card-body">
 
-<div *ngIf="arrBirds">
-  <div  class="row borderBtm" *ngFor="let bird of arrBirds" >
+<div *ngIf="listMatch">
+  <div  class="row borderBtm" *ngFor="let match of listMatch" >
     <div class="col-md-4"  >
     <div   class="lazy-loader lazy-loader--loaded"  style="height: auto; width:100%"   >
-      <a  routerLink="/cricketTeam">  <img src="{{bird.Teamlogs[0].TeamLogs}}" width="70" height="70"/></a>
+      <a  routerLink="/cricketTeam">  <img src="{{match.Teamlogs[0].TeamLogs}}" width="70" height="70"/></a>
       </div>
     </div>
       
       <div class="matchCardInfo_9f857 col-md-4" style="vertical-align: middle;top: 16px;">
-       <div class="tourNameLabel_d619f col-xs-12" >{{bird.SeriesName}} </div>
+       <div class="tourNameLabel_d619f col-xs-12" >{{match.SeriesName}} </div>
        <div class="timer__text col-xs-12">
-        <div>{{bird.TImeSlot}}</div>
+        <div>{{match.TImeSlot}}</div>
        </div>
     
    </div>
    
    <div class="col-md-4" >
     <div class="lazy-loader lazy-loader--loaded" style="height: auto; width: 100%;"  >
-        <img src="{{bird.Teamlogs[1].TeamLogs}}"  width="70" height="65" class="img"/></div>
+        <img src="{{match.Teamlogs[1].TeamLogs}}"  width="70" height="65" class="img"/></div>
      </div>
      </div>
      </div>
@@ -54,9 +54,9 @@
           <!-- Modal body -->
           <div class="modal-body">
 
-            <div class="row" *ngFor="let bird of arrBirds" style="padding: 10px 0;border-bottom: 1px solid #ccc;">           
+            <div class="row" *ngFor="let match of listMatch" style="padding: 10px 0;border-bottom: 1px solid #ccc;">           
              <div class="col-md-6">
-             {{bird.SeriesName}} 
+             {{match.SeriesName}} 
              </div>
          <div class="col-md-6">
             <div class="form-check">

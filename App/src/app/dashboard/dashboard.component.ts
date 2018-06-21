@@ -8,14 +8,15 @@ import { HttpErrorResponse } from '@angular/common/http';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  selectedCities: string[] = [];
+  
   title = 'JSON to Table Example';
-  constructor (private httpService: HttpClient) { }
-  arrBirds: string [];
+  constructor (private http: HttpClient) { }
+  listMatch: string [];
   ngOnInit () {
-    this.httpService.get('./assets/details.json').subscribe(
+    let head = new Headers({ 'Content-Type': 'application/json' });
+    this.http.get('http://idtp285/api/GetMatch').subscribe(
       data => {
-        this.arrBirds = data as string [];	 // FILL THE ARRAY WITH DATA.
+        this.listMatch = data as string [];	 // FILL THE ARRAY WITH DATA.
         //  console.log(this.arrBirds[1]);
       },
       (err: HttpErrorResponse) => {
