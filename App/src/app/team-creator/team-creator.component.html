@@ -1,0 +1,51 @@
+<div class="cointainer" >
+    <ng-container *ngFor="let match of allMatches">
+  
+                
+           
+        <div class="row teamPlayer" *ngFor="let person of match.MatchPlayers | playerFilterByRole: role"   >
+            <div class="col-md-2">
+                <img src="{{person.PlayerImage}}" width="70" height="70" class="rounded img" />
+            </div>
+            <div class="matchCardInfo_9f857 col-md-4" >
+                <div class="col-xs-12"> {{person.FirstName}}  {{person.LastName}}</div>
+                <div class="timer__text col-xs-12">
+                    <div>{{person.Address}} | Points: {{person.Points}}  </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-2 text-right">{{person.Credits}}
+           <input type="checkbox" id="playerCheck" (change)="stateChanged(person.PlayerId)"  [(ngModel)]="person.IsSelected"/>
+
+            </div>
+            <div class="col-md-6 text-right">{{result}}              
+     
+                 </div>
+        </div>
+
+     
+    </ng-container>
+  
+ 
+
+</div>
+<div class="create-team__team-selector__footer text-upper ctFooter_07b1f">
+       
+    <div class="create-team__team-selector__footer-action-container text-upper">
+        <div class="row" style="width: 700px;">
+            <div class="col-md-1 text-center">
+                    <label class="text-white scoreFont" id="lblCounter"></label> YOR
+
+           </div>
+            <div class="col-md-1 text-center"> <span class="text-white scoreFont">0</span> NOR</div>
+            <div class="col-md-2 text-center" style="border-right: 1px dashed;"> <span class="scoreFont"><span class="text-white">0</span>/11</span> PLAYERS</div>
+            <div class="col-md-2 text-center"><span  class="scoreFont">100/100 </span> <br/> CREDITS LEFT</div>
+            <div class="col-md-3"></div>
+        <div class="col-md-2">
+            <a href="#" routerLink="/createCaptain">  
+                 <button type="button" class="btn btn-sm btn-outline-secondary " style="margin-top: 12px">NEXT</button>
+                </a>              
+        </div>
+    </div>
+    </div>
+</div>

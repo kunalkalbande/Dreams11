@@ -1,0 +1,46 @@
+<div class="col-md-4 cricketorTeamList">
+  <a routerLink="/dashboard">
+    <span class="fas fa-arrow-left arrowLeft"></span>
+  </a>
+  <div class="cricketTeamTitle">
+
+    <h4> CRICKET TEAM</h4>
+  </div>
+  <div class="alert alert-light" role="alert" *ngIf="allMatches">
+    <div class="row" *ngFor="let match of allMatches">
+      <div class="col-md-4">{{match.Name}}</div>
+      <div class="col-md-4" style="color: #c51d23">{{match.Date}}</div>
+      <div class="col-md-4 text-right">
+        <a href="https://skillup.dream11.com/cricket/afgh-vs-ban-2nd-t20i-pre-match-analysis/">GURU</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="matchListContainer col-md-4"  >
+
+  <div>
+      <div class="label" style="padding: 10px 0;font-weight: bold;">BATSMEN</div>
+      <app-team-selection role="Batsman"></app-team-selection>
+  
+    </div>
+    <div>
+        <div class="label" style="padding: 10px 0;font-weight: bold;">ALL-ROUNDERS</div>
+        <app-team-selection role="AllRounder"></app-team-selection>
+    
+      </div>
+      <div>
+          <div class="label" style="padding: 10px 0;font-weight: bold;">BOWLERS</div>
+          <app-team-selection role="Bowler"></app-team-selection>
+      
+        </div>
+</div>
+<!-- <div class="create-team__team-selector__footer text-upper ctFooter_07b1f">
+
+  <div class="create-team__team-selector__footer-action-container text-upper">
+    <div class="row" style="width: 700px;">
+      <a href="javascript:void(0)" routerLink="/contestList" style="margin: 0 auto;">
+        <button type="button" class="btn btn-sm btn-light">SAVE TEAM</button>
+      </a>
+    </div>
+  </div>
+</div> -->

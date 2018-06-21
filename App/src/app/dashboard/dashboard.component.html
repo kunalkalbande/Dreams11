@@ -1,0 +1,76 @@
+<div class="col-md-4 cricketorList">
+<div class="cricketTitle">
+<h4> CRICKET</h4> 
+</div>
+
+</div>
+<div class="matchListContainer col-md-4">
+  <div class="col-md-12 row" style="padding: 11px 0;">
+<div class="col-md-6 "> Pick an Upcoming Match </div>
+<div class="col-md-6  text-right "><a href="" class="filterSeries"  data-toggle="modal" data-target="#myModal">Filter By Series</a></div>
+</div>
+<div class="card">
+    
+    <div class="card-body">
+
+<div *ngIf="arrBirds">
+  <div  class="row borderBtm" *ngFor="let bird of arrBirds" >
+    <div class="col-md-4"  >
+    <div   class="lazy-loader lazy-loader--loaded"  style="height: auto; width:100%"   >
+      <a  routerLink="/cricketTeam">  <img src="{{bird.Teamlogs[0].TeamLogs}}" width="70" height="70"/></a>
+      </div>
+    </div>
+      
+      <div class="matchCardInfo_9f857 col-md-4" style="vertical-align: middle;top: 16px;">
+       <div class="tourNameLabel_d619f col-xs-12" >{{bird.SeriesName}} </div>
+       <div class="timer__text col-xs-12">
+        <div>{{bird.TImeSlot}}</div>
+       </div>
+    
+   </div>
+   
+   <div class="col-md-4" >
+    <div class="lazy-loader lazy-loader--loaded" style="height: auto; width: 100%;"  >
+        <img src="{{bird.Teamlogs[1].TeamLogs}}"  width="70" height="65" class="img"/></div>
+     </div>
+     </div>
+     </div>
+
+
+    </div>
+
+
+  </div>
+  <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">All Series</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+
+            <div class="row" *ngFor="let bird of arrBirds" style="padding: 10px 0;border-bottom: 1px solid #ccc;">           
+             <div class="col-md-6">
+             {{bird.SeriesName}} 
+             </div>
+         <div class="col-md-6">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1"></div>
+         </div>
+        </div>
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">APPLY</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+</div>
