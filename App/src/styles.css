@@ -199,7 +199,12 @@ md-tab-group {
     .container {margin: 0; padding: 0;}
     .bg-white{background: #fff;height: 826px;}
     .blackStripe{max-width: 0;}
-    .bg-grey{background: #323232;color: #ccc;font-size: 12px; padding-left: 25px;}
+    .bg-grey{background: #323232;color: #ccc;font-size: 12px;padding-left: 25px;bottom: 0;position: fixed;display: flex;justify-content: flex-end;
+        flex-direction: column;max-width: 585px;}
+    .selectedCountTwo{position: relative;top: -49px;left: -123px;}
+    .selectedCountThree{position: relative; top: -49px;left: -36px;;}
+    .selectedCountFour{position: relative; top: -49px;left: 48px;}
+    .selectedCountFive{position: relative; top: -49px;left:131px;}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body{font-size: 13px;}

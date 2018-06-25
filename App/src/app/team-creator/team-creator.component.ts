@@ -42,12 +42,26 @@ export class TeamCreatorComponent implements OnInit {
   }
 
 
-  stateChanged(playerId) {
+  stateChanged() {
+
     let allmatchPlayers = this.matchInfo;
     let selectedCount =  this.matchInfo.MatchPlayers.filter(x=>x.IsSelected==true).length;
     ( document.getElementById("lblCounter") as HTMLInputElement).innerHTML= selectedCount.toString();
+    
+    let selectedCountTwo =  allmatchPlayers.MatchPlayers.filter(x=>x.IsSelected==true && x.PlayerRoleName == "Wicketkeeper").length;
+    ( document.getElementById("wicketkeeperCount") as HTMLInputElement).innerHTML= selectedCountTwo.toString();
 
-   
+    let selectedCountThree =  allmatchPlayers.MatchPlayers.filter(x=>x.IsSelected==true && x.PlayerRoleName == "Batsman").length;
+    ( document.getElementById("batsmanCount") as HTMLInputElement).innerHTML= selectedCountThree.toString();
+
+    
+    let selectedCountFour = allmatchPlayers.MatchPlayers.filter(x=>x.IsSelected==true && x.PlayerRoleName == "AllRounder").length;
+    ( document.getElementById("allrounderCount") as HTMLInputElement).innerHTML= selectedCountFour.toString();
+
+      
+    let selectedCountFive =  allmatchPlayers.MatchPlayers.filter(x=>x.IsSelected==true && x.PlayerRoleName == "Blower").length;
+    ( document.getElementById("bowlerCount") as HTMLInputElement).innerHTML= selectedCountFive.toString();
+      
   }
 
   
