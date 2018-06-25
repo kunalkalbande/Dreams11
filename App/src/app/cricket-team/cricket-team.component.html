@@ -33,17 +33,17 @@
 
                         <p-tabPanel header="TEAM">
                     
-                            <app-team-creator  role="Wicketkeeper"></app-team-creator>
+                            <app-team-creator [matchInfo]="matchInfo" role="Wicketkeeper"></app-team-creator>
 
                         </p-tabPanel>
                         <p-tabPanel header="PLAYER">
-                            <app-team-creator role="Wicketkeeper"></app-team-creator>
+                            <app-team-creator [matchInfo]="matchInfo"  role="Wicketkeeper"></app-team-creator>
                         </p-tabPanel>
                         <p-tabPanel header="POINT">
-                            <app-team-creator role="Wicketkeeper"></app-team-creator>
+                            <app-team-creator [matchInfo]="matchInfo"  role="Wicketkeeper"></app-team-creator>
                         </p-tabPanel>
                         <p-tabPanel header="CREDITS">
-                            <app-team-creator role="Wicketkeeper"></app-team-creator>
+                            <app-team-creator [matchInfo]="matchInfo"  role="Wicketkeeper"></app-team-creator>
                         </p-tabPanel>
                     </p-tabView>
                 </div>
@@ -53,17 +53,17 @@
                     <p-tabView >
 
                             <p-tabPanel header="TEAM">
-                                <app-team-creator  role="Batsman"></app-team-creator>
+                                <app-team-creator [matchInfo]="matchInfo"  role="Batsman"></app-team-creator>
     
                             </p-tabPanel>
                             <p-tabPanel header="PLAYER">
-                                <app-team-creator role="Batsman"></app-team-creator>
+                                <app-team-creator [matchInfo]="matchInfo"  role="Batsman"></app-team-creator>
                             </p-tabPanel>
                             <p-tabPanel header="POINT">
-                                <app-team-creator role="Batsman"></app-team-creator>
+                                <app-team-creator [matchInfo]="matchInfo"  role="Batsman"></app-team-creator>
                             </p-tabPanel>
                             <p-tabPanel header="CREDITS">
-                                <app-team-creator role="Batsman"></app-team-creator>
+                                <app-team-creator [matchInfo]="matchInfo"  role="Batsman"></app-team-creator>
                             </p-tabPanel>
                         </p-tabView>
             </p-tabPanel>
@@ -72,17 +72,17 @@
                     <p-tabView  >
 
                             <p-tabPanel header="TEAM" >
-                                <app-team-creator  role="AllRounder"></app-team-creator>
+                                <app-team-creator [matchInfo]="matchInfo"  role="AllRounder"></app-team-creator>
     
                             </p-tabPanel>
                             <p-tabPanel header="PLAYER">
-                                <app-team-creator role="AllRounder"></app-team-creator>
+                                <app-team-creator [matchInfo]="matchInfo"  role="AllRounder"></app-team-creator>
                             </p-tabPanel>
                             <p-tabPanel header="POINT">
-                                <app-team-creator role="AllRounder"></app-team-creator>
+                                <app-team-creator [matchInfo]="matchInfo"  role="AllRounder"></app-team-creator>
                             </p-tabPanel>
                             <p-tabPanel header="CREDITS">
-                                <app-team-creator role="AllRounder"></app-team-creator>
+                                <app-team-creator [matchInfo]="matchInfo"  role="AllRounder"></app-team-creator>
                             </p-tabPanel>
                         </p-tabView>
              
@@ -92,17 +92,17 @@
                     <p-tabView >
 
                             <p-tabPanel header="TEAM">
-                                <app-team-creator  role="Blower"></app-team-creator>
+                                <app-team-creator [matchInfo]="matchInfo"  role="Blower"></app-team-creator>
 
                             </p-tabPanel>
                             <p-tabPanel header="PLAYER">
-                                <app-team-creator role="Blower"></app-team-creator>
+                                <app-team-creator [matchInfo]="matchInfo"  role="Blower"></app-team-creator>
                             </p-tabPanel>
                             <p-tabPanel header="POINT">
-                                <app-team-creator role="Blower"></app-team-creator>
+                                <app-team-creator [matchInfo]="matchInfo"  role="Blower"></app-team-creator>
                             </p-tabPanel>
                             <p-tabPanel header="CREDITS">
-                                <app-team-creator role="Blower"></app-team-creator>
+                                <app-team-creator  [matchInfo]="matchInfo"  role="Blower"></app-team-creator>
                             </p-tabPanel>
                         </p-tabView>
               
@@ -119,9 +119,7 @@
 
     </div>  
     <div class="row">
-            <div class="col-md-6 col-xs-12 bg-grey  ">
-
-               
+            <div class="col-md-6 col-xs-12 bg-grey  ">               
         
                 <div class="row">
                     <div class="col-1 text-center">
