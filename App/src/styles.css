@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 body{background:url(./assets/images/desktop-pwa_2.jpg)0 0 no-repeat; background-size: 100%; }
 .borderBtm{border-bottom: 1px solid #ccc;    padding-bottom: 10px;    margin-bottom: 10px;}
-.cricketorList{ height: 50px; background: #c51d23;box-shadow: 2px 2px 2px #ccc; position: relative}
+.cricketorList{ height: 50px; background: #c51d23;box-shadow: 2px 2px 2px #ccc; position: relative; }
 .cricketTitle{border-bottom:2px solid #fff;bottom: 0;width: 100%;left: 0; color: #fff;position: absolute }
 .cricketTitle h4{font-weight: normal; padding-left: 8px;}
-.matchListContainer{background: #fff;width: 50%;max-height: 900px;min-height: 867px;overflow: auto;}
+.matchListContainer{background: #fff;width: 50%;max-height: 900px;min-height: 867px;overflow: auto; }
 .filterSeries{text-transform: uppercase;font-size: 11px;}
 table, th, td {
     border: 1px solid black;
@@ -39,8 +39,8 @@ md-tab-group {
   .mat-tab-label{opacity: 10;}
   
 .ui-tabview .ui-tabview.ui-tabview-top > .ui-tabview-nav{padding: 0 !important;}
-.ui-tabview-panel{border: 1px solid #ccc !important;}
-.ui-tabview .ui-tabview-panel{ border-width: 1px!important; padding: 1em;/* background: none; */}
+.ui-tabview-panel{border-top: 1px solid #dfdfdf !important;}
+
 .ui-tabview .ui-tabview-nav > li.ui-state-active {
     background: #ffffff;
     font-weight: normal;
@@ -52,29 +52,31 @@ md-tab-group {
 }
 .ui-corner-top{border-top-left-radius:0 !important; border-top-right-radius:0!important;}
 
-/* .ui-tabview .ui-tabview-nav li{padding: 0px 6px !important;} */
+
+
 .ui-table .ui-table-thead>tr>th, .ui-table .ui-table-tbody>tr>td, .ui-table .ui-table-tfoot>tr>td {
     padding: 7px !important;
   }
-
+  .ui-tabview .ui-tabview-nav li{padding: 0 12px !important;}
+  
   
 
   .subTab .ui-tabview .ui-tabview-nav li{background: none !important;} 
   .subTab .ui-tabview .ui-tabview-nav > li.ui-state-active{max-width: 550px;
     font-size: var(--font-small);
-    background-color: #eef5fc!important;
+    
     color: #97b5d3;
     text-transform: uppercase;
     display: flex;
     padding: 0 3px !important;
-    border-top: 1px solid #d4e3f2 !important;
+    
     justify-content: space-between;
     height: 40px;}
 
     .subTab >.ui-tabview .ui-tabview.ui-tabview-top > .ui-tabview-nav{background: #ccc!important;}
     .teamPlayer{
         margin-bottom: 10px;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #d8d7d7;
         padding-bottom: 10px;
     }
     .modal-backdrop {
@@ -107,7 +109,6 @@ md-tab-group {
         text-transform: uppercase;
     }
     .create-team__team-selector__footer-action-container {
-        
         -ms-flex-align: center;
         align-items: center;
         background-color: #323232;
@@ -122,6 +123,7 @@ md-tab-group {
         justify-content: space-between;
         color: #ADADAD !important;
         font-size: 13px;
+      
     }
     .create-team__team-selector__footer {
         position: fixed;
@@ -130,16 +132,14 @@ md-tab-group {
         display: -webkit-box;
         display: -ms-flexbox;   
         display: flex;
-        left:0;
-           
-        flex-direction: column;
-       
+        left:0;          
+        flex-direction: column;       
         -ms-flex-pack: end;
         justify-content: flex-end;
     }
     
     .ctFooter_07b1f {
-        max-width: 33.33%;
+        max-width: 29.8%;
         z-index: 2;
     }
     .teamPreviewButtonWrapper_129a4 {
@@ -194,6 +194,22 @@ md-tab-group {
     font-size: 9px;}
     .captainVC:hover{background: #1f89ce; text-decoration: none; color: #fff}
     .captainVC:focus{background: #1f89ce; text-decoration: none; color: #fff}
-    .pi-check:before {
-        content: "\e909";
-    }
+    .pi-check:before {content: "\e909";}
+    .ui-state-default {border: 0px solid !important;}
+    .container {margin: 0; padding: 0;}
+    .bg-white{background: #fff;height: 826px;}
+    .blackStripe{max-width: 0;}
+    .bg-grey{background: #323232;color: #ccc;font-size: 12px; padding-left: 25px;}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{font-size: 13px;}
+    .ui-tabview .ui-tabview-nav li {padding: 0 1px;}
+    .ctFooter_07b1f{max-width:100% !important;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 768px){
+    
+   
+
+}

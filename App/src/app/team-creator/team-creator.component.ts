@@ -56,7 +56,7 @@ export class TeamCreatorComponent implements OnInit {
     let allmatchPlayers = this.matchInfo
     var i;
     var count = 0;
-    //debugger;
+
     let selectedCount =  this.matchInfo.MatchPlayers.filter(x=>x.IsSelected==true).length;
     ( document.getElementById("lblCounter") as HTMLInputElement).innerHTML= selectedCount.toString();
     //this.allMatches[0].MatchPlayers[0].PlayerId=100;

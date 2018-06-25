@@ -63,7 +63,7 @@ export class TeamSelectionComponent implements OnInit {
     let allmatchPlayers = this.matchInfo
     var i;
     var count = 0;
-  debugger;
+
     let matchedPlayerCount = this.matchInfo.map(match => {      
       return match.MatchPlayers.filter(player => player.IsSelected).length })
     var result = matchedPlayerCount.reduce((a, b) => a + b, 0)

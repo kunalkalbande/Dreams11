@@ -19,7 +19,7 @@ import { AccordionModule } from 'primeng/accordion';
 import { MenuItem } from 'primeng/api';
 import { SharedModule, PanelModule } from 'primeng/primeng';
 import { TeamCreatorComponent } from './team-creator/team-creator.component';
-import { CarService } from './car.service';
+
 import { TableModule } from 'primeng/table';
 
 import { PlayerFilterByRolePipe } from './player-filter-by-role.pipe';
@@ -65,6 +65,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 
   bootstrap: [AppComponent],
-  providers: [CarService ]
+  providers: []
 })
 export class AppModule { }

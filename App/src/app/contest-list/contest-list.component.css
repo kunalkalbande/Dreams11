@@ -1,5 +1,5 @@
 
-.cricketorTeamList{ height: 100px; background: #c51d23;box-shadow: 2px 2px 2px #ccc; position: relative}
+.cricketorTeamList{ height: 100px; background: #c51d23;box-shadow: 2px 2px 2px #ccc; position: relative;width: 550px; }
 .cricketTeamTitle {
     
     width: 100%;

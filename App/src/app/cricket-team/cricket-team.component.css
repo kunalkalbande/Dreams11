@@ -1,5 +1,5 @@
 
-.cricketorTeamList{ height: 100px; background: #c51d23;box-shadow: 2px 2px 2px #ccc; position: relative}
+.cricketorTeamList{ height: 100px; background: #c51d23;box-shadow: 2px 2px 2px #ccc; position: relative; padding: 10px 10px 23px 25px;}
 .cricketTeamTitle {
     
     width: 100%;
@@ -7,7 +7,7 @@
     color: #fff;
   
     text-align: center;
-
+    
 }
 .arrowLeft{float: left; padding-top: 10px; color: #fff}
 .arrowLeft a{color: #fff;}
@@ -25,4 +25,7 @@
   .demo-tab-content {
     padding: 16px;
   }
-
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cricketorTeamList {height: 129px;}
+}
