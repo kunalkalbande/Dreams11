@@ -197,7 +197,7 @@ md-tab-group {
     .pi-check:before {content: "\e909";}
     .ui-state-default {border: 0px solid !important;}
     .container {margin: 0; padding: 0;}
-    .bg-white{background: #fff;height: 826px;}
+    .bg-white{background: #fff;height: 826px;min-height: 826px;max-height: 826px;overflow: auto;}
     .blackStripe{max-width: 0;}
     .bg-grey{background: #323232;color: #ccc;font-size: 12px;padding-left: 25px;bottom: 0;position: fixed;display: flex;justify-content: flex-end;
         flex-direction: column;max-width: 585px;}

@@ -1,23 +1,31 @@
-<div class="col-md-4 cricketorTeamList">
-  <a routerLink="/dashboard">
-    <span class="fas fa-arrow-left arrowLeft"></span>
-  </a>
-  <div class="cricketTeamTitle">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-xs-12 cricketorTeamList">
+            <a routerLink="/dashboard">
+                <span class="fas fa-arrow-left arrowLeft"></span>
+            </a>
+            <div class="cricketTeamTitle">
+        
+                <h4> CRICKET TEAM</h4>
+            </div>
+            <div class="col-md-12 col-xs-12 ">
+            <div class="alert alert-light" role="alert" *ngIf="matchInfo">
+                <div class="row ">
+                    <div class="col">{{matchInfo.Name}}</div>
+                    <div class="col-5" style="color: #c51d23; text-align: center">{{matchInfo.Date}}</div>
+                    <div class="col">
+                        <a href="https://skillup.dream11.com/cricket/afgh-vs-ban-2nd-t20i-pre-match-analysis/" class="float-right">GURU</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+  
 
-    <h4> CRICKET TEAM</h4>
-  </div>
-  <div class="alert alert-light" role="alert" *ngIf="matchInfo">
-    <div class="row" >
-      <div class="col-md-4">{{matchInfo.Name}}</div>
-      <div class="col-md-5" style="color: #c51d23">{{matchInfo.Date}}</div>
-      <div class="col-md-3 text-right">
-        <a href="https://skillup.dream11.com/cricket/afgh-vs-ban-2nd-t20i-pre-match-analysis/">GURU</a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="matchListContainer col-md-4"  >
-
+<div class="row">
+<div class="col-md-6 col-xs-12 bg-white "  >
+  
   <div>
       <div class="label" style="padding: 10px 0;font-weight: bold;">BATSMEN</div>
       <app-team-selection role="Batsman"></app-team-selection>
@@ -32,6 +40,9 @@
           <div class="label" style="padding: 10px 0;font-weight: bold;">BOWLERS</div>
           <app-team-selection role="Blower"></app-team-selection>
         </div>
+        </div>
+</div>
+
 </div>
 <!-- <div class="create-team__team-selector__footer text-upper ctFooter_07b1f">
 
