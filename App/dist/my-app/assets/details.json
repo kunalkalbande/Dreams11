@@ -1,0 +1,266 @@
+[
+    {
+        "Id": 12,
+        "Name": "csk vs DD",
+        "SeriesName": "CSK vs DD IPL",
+        "TImeSlot": "05h 47m 50s",
+        "Teamlogs": [
+            {
+                "Id": 7,
+                "TeamId": 1,
+                "TeamTeamName": "Team1",
+                "MatchId": 12,
+                "TeamLogs": "http://idtp285/ClientDocument/961c353ebef74b9aad472628e7065e26MI-Logo.jpg"
+            },
+            {
+                "Id": 8,
+                "TeamId": 2,
+                "TeamTeamName": "Team2",
+                "MatchId": 12,
+                "TeamLogs": "http://idtp285/ClientDocument/09aea0d7263747c5ac4c6843e0d4ad8cdd-logo.jpg"
+            }
+        ]
+    },
+    {
+        "Id": 14,
+        "Name": "KXIP vs MI",
+        "SeriesName": "KXIP vs MI IPL",
+        "TImeSlot": "15h 27m 57s",
+        "Teamlogs": [
+            {
+                "Id": 9,
+                "TeamId": 1,
+                "TeamTeamName": "Team1",
+                "MatchId": 14,
+                "TeamLogs": "http://idtp285/ClientDocument/f84aaca0738b4583a93a2ead7ff482a6KXIP-Logo.jpg"
+            },
+            {
+                "Id": 10,
+                "TeamId": 2,
+                "TeamTeamName": "Team2",
+                "MatchId": 14,
+                "TeamLogs": "http://idtp285/ClientDocument/3e2eefa0b4b549a1971ec93569504fc8MI-Logo.jpg"
+            }
+        ]
+    },
+    {
+        "Id": 15,
+        "Name": "RCB vs RR",
+        "SeriesName": "RCB vs RR IPL",
+        "TImeSlot": "15h 27m 57s",
+        "Teamlogs": [
+            {
+                "Id": 11,
+                "TeamId": 1,
+                "TeamTeamName": "Team1",
+                "MatchId": 15,
+                "TeamLogs": "http://idtp285/ClientDocument/cf73348b2b284bc9bf3d8ff1a776bdacimages.png"
+            },
+            {
+                "Id": 12,
+                "TeamId": 2,
+                "TeamTeamName": "Team2",
+                "MatchId": 15,
+                "TeamLogs": "http://idtp285/ClientDocument/543f6b16925e408eac1ef182941477a5RR.png"
+            }
+        ]
+    },
+    {
+        "Id": 16,
+        "Name": "SRH vs KKR",
+        "SeriesName": "SRH vs KKR IPL",
+        "TImeSlot": "27h 22m 37s",
+        "Teamlogs": [
+            {
+                "Id": 13,
+                "TeamId": 1,
+                "TeamTeamName": "Team1",
+                "MatchId": 16,
+                "TeamLogs": "http://idtp285/ClientDocument/55bce1ebbced4ee693b39d9e192f8882SRH.png"
+            },
+            {
+                "Id": 14,
+                "TeamId": 2,
+                "TeamTeamName": "Team2",
+                "MatchId": 16,
+                "TeamLogs": "http://idtp285/ClientDocument/8674fceb489a40daabc592864a9087e3KKR.jpg"
+            }
+        ]
+    },
+    {
+        "Id": 17,
+        "Name": "MI vs CSK",
+        "SeriesName": "MI vs CSK IPL",
+        "TImeSlot": "21h 51m 20s",
+        "Teamlogs": [
+            {
+                "Id": 15,
+                "TeamId": 1,
+                "TeamTeamName": "Team1",
+                "MatchId": 17,
+                "TeamLogs": "http://idtp285/ClientDocument/961c353ebef74b9aad472628e7065e26MI-Logo.jpg"
+            },
+            {
+                "Id": 16,
+                "TeamId": 2,
+                "TeamTeamName": "Team2",
+                "MatchId": 17,
+                "TeamLogs": "http://idtp285/ClientDocument/ece9b4b32cf74084b50c1c65ebb9e6f2CSK-Logo.png"
+            }
+        ]
+    },
+    {
+        "Id": 19,
+        "Name": "MI VS RR",
+        "SeriesName": "MI VS RR IPL",
+        "TImeSlot": "24h 41m 17s",
+        "Teamlogs": [
+            {
+                "Id": 21,
+                "TeamId": 1,
+                "TeamTeamName": "Team1",
+                "MatchId": 19,
+                "TeamLogs": "http://idtp285/ClientDocument/e4edc594978545c8826294b463175ba2MI-Logo.jpg"
+            },
+            {
+                "Id": 23,
+                "TeamId": 2,
+                "TeamTeamName": "Team2",
+                "MatchId": 19,
+                "TeamLogs": "http://idtp285/ClientDocument/abf178b2f3da476aa7b8138056127803RR.png"
+            }
+        ]
+    },
+    {
+        "Id": 12,
+        "Name": "csk vs DD",
+        "SeriesName": "CSK vs DD IPL",
+        "TImeSlot": "05h 47m 50s",
+        "Teamlogs": [
+            {
+                "Id": 7,
+                "TeamId": 1,
+                "TeamTeamName": "Team1",
+                "MatchId": 12,
+                "TeamLogs": "http://idtp285/ClientDocument/961c353ebef74b9aad472628e7065e26MI-Logo.jpg"
+            },
+            {
+                "Id": 8,
+                "TeamId": 2,
+                "TeamTeamName": "Team2",
+                "MatchId": 12,
+                "TeamLogs": "http://idtp285/ClientDocument/09aea0d7263747c5ac4c6843e0d4ad8cdd-logo.jpg"
+            }
+        ]
+    },
+    {
+        "Id": 14,
+        "Name": "KXIP vs MI",
+        "SeriesName": "KXIP vs MI IPL",
+        "TImeSlot": "15h 27m 57s",
+        "Teamlogs": [
+            {
+                "Id": 9,
+                "TeamId": 1,
+                "TeamTeamName": "Team1",
+                "MatchId": 14,
+                "TeamLogs": "http://idtp285/ClientDocument/f84aaca0738b4583a93a2ead7ff482a6KXIP-Logo.jpg"
+            },
+            {
+                "Id": 10,
+                "TeamId": 2,
+                "TeamTeamName": "Team2",
+                "MatchId": 14,
+                "TeamLogs": "http://idtp285/ClientDocument/3e2eefa0b4b549a1971ec93569504fc8MI-Logo.jpg"
+            }
+        ]
+    },
+    {
+        "Id": 15,
+        "Name": "RCB vs RR",
+        "SeriesName": "RCB vs RR IPL",
+        "TImeSlot": "15h 27m 57s",
+        "Teamlogs": [
+            {
+                "Id": 11,
+                "TeamId": 1,
+                "TeamTeamName": "Team1",
+                "MatchId": 15,
+                "TeamLogs": "http://idtp285/ClientDocument/cf73348b2b284bc9bf3d8ff1a776bdacimages.png"
+            },
+            {
+                "Id": 12,
+                "TeamId": 2,
+                "TeamTeamName": "Team2",
+                "MatchId": 15,
+                "TeamLogs": "http://idtp285/ClientDocument/543f6b16925e408eac1ef182941477a5RR.png"
+            }
+        ]
+    },
+    {
+        "Id": 16,
+        "Name": "SRH vs KKR",
+        "SeriesName": "SRH vs KKR IPL",
+        "TImeSlot": "27h 22m 37s",
+        "Teamlogs": [
+            {
+                "Id": 13,
+                "TeamId": 1,
+                "TeamTeamName": "Team1",
+                "MatchId": 16,
+                "TeamLogs": "http://idtp285/ClientDocument/55bce1ebbced4ee693b39d9e192f8882SRH.png"
+            },
+            {
+                "Id": 14,
+                "TeamId": 2,
+                "TeamTeamName": "Team2",
+                "MatchId": 16,
+                "TeamLogs": "http://idtp285/ClientDocument/8674fceb489a40daabc592864a9087e3KKR.jpg"
+            }
+        ]
+    },
+    {
+        "Id": 17,
+        "Name": "MI vs CSK",
+        "SeriesName": "MI vs CSK IPL",
+        "TImeSlot": "21h 51m 20s",
+        "Teamlogs": [
+            {
+                "Id": 15,
+                "TeamId": 1,
+                "TeamTeamName": "Team1",
+                "MatchId": 17,
+                "TeamLogs": "http://idtp285/ClientDocument/961c353ebef74b9aad472628e7065e26MI-Logo.jpg"
+            },
+            {
+                "Id": 16,
+                "TeamId": 2,
+                "TeamTeamName": "Team2",
+                "MatchId": 17,
+                "TeamLogs": "http://idtp285/ClientDocument/ece9b4b32cf74084b50c1c65ebb9e6f2CSK-Logo.png"
+            }
+        ]
+    },
+    {
+        "Id": 19,
+        "Name": "MI VS RR",
+        "SeriesName": "MI VS RR IPL",
+        "TImeSlot": "24h 41m 17s",
+        "Teamlogs": [
+            {
+                "Id": 21,
+                "TeamId": 1,
+                "TeamTeamName": "Team1",
+                "MatchId": 19,
+                "TeamLogs": "http://idtp285/ClientDocument/e4edc594978545c8826294b463175ba2MI-Logo.jpg"
+            },
+            {
+                "Id": 23,
+                "TeamId": 2,
+                "TeamTeamName": "Team2",
+                "MatchId": 19,
+                "TeamLogs": "http://idtp285/ClientDocument/abf178b2f3da476aa7b8138056127803RR.png"
+            }
+        ]
+    }
+]
