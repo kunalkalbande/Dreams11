@@ -7,7 +7,7 @@
     color: #fff;
   
     text-align: center;
-
+    padding-top:10px;
 }
 .arrowLeft{float: left; padding-top: 10px; color: #fff}
 .arrowLeft a{color: #fff;}
@@ -25,4 +25,17 @@
   .demo-tab-content {
     padding: 16px;
   }
+
+  .bs-example{
+    margin: 20px;
+    padding-left: 50px;
+}
+.btncolor
+{
+    background:black; 
+    
+}
+.hide{
+    display: none;
+}
 

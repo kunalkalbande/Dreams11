@@ -1,0 +1,45 @@
+
+.cricketorTeamList{ height: 100px; background: #c51d23;box-shadow: 2px 2px 2px #ccc; position: relative;width: 550px; }
+.cricketTeamTitle {
+    
+    width: 100%;
+    left: 0;
+    color: #fff;
+  
+    text-align: center;
+    padding-top:10px;
+}
+.arrowLeft{float: left; padding-top: 10px; color: #fff}
+.arrowLeft a{color: #fff;}
+.alert {
+    position: relative;
+    padding: 6px 1.25rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    margin-top: 20px;
+}
+.demo-tab-group {
+    border: 1px solid #e8e8e8;
+  }
+  
+  .demo-tab-content {
+    padding: 16px;
+  }
+  /* .row{
+    margin-left: 1px;
+  } */
+  .row borderBtmusercontest {
+     margin-left: -13px;
+  }
+ .card1{
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  /* border: 1px solid rgba(0,0,0,.125); */
+}

@@ -1,28 +1,26 @@
 <div class="container" *ngIf="matchInfo" >
     <ng-container *ngFor="let player of matchInfo.MatchPlayers | playerFilterByRole: role">            
-        <div class="row ">
+        <div class="row teamPlayer ">
             <div class="col" >
                 <img src="{{player.PlayerImage}}" width="60" height="60"  class="float-left img rounded " />
             </div>
             <div class="col-6  text-left" >
                 <div class="col-xs-12">  {{player.FirstName}}  {{player.LastName}}<br/>
                  <span class="timer__text">   {{player.Address}} | Points: {{player.Points}}</span>
-
-
-                </div>
-                <!-- <div class="timer__text col-xs-12">
-                    <div>  </div>
-                </div> -->
+                </div>            
             </div>
             <div class="col"></div>
             <div class="col text-right">{{player.Credits}}
-           <input type="checkbox" id="playerCheck" (change)="stateChanged()"  [(ngModel)]="player.IsSelected"/>
-
-            </div>
-
+           <!-- <input type="checkbox"  (change)="stateChanged()" class="addIcon" [(ngModel)]="player.IsSelected"/>        
+<span class="addIcon"></span>
+            </div> -->
+            <label class="switch">
+                    <input type="checkbox" checked id="playerCheck" (change)="stateChanged()"  [(ngModel)]="player.IsSelected"/>
+                    <span class="slider round"></span>
+            </label>
         </div>
 
-     
+     </div>
     </ng-container>
   
  

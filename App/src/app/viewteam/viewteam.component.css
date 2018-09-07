@@ -1,0 +1,42 @@
+.rowimg
+{
+    margin:0px;
+    padding:0px;
+}
+.content_60710 {
+    background: url(https://assets.dream11.com/public/imgs/cricket-artwork.svg) no-repeat;
+    width:840px;
+    height: 1000px;
+    position: relative; 
+}
+/* .header
+{
+   height: 50px;
+   width: 50px;
+   float: left;
+   background: red;
+   display: transperant;
+} */
+
+.container .content {
+    position: absolute; /* Position the background text */
+    margin: -1130px;; /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(250, 249, 249, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+}
+
+.divheight{
+    height: 27px;
+}
+
+.divheight1{
+    height: 57px;
+}
+
+.divheight2{
+    height: 187px;
+}
+.divheight3{
+    height: 177px;
+}

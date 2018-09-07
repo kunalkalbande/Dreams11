@@ -3,7 +3,7 @@ body{background:url(./assets/images/desktop-pwa_2.jpg)0 0 no-repeat; background-
 .borderBtm{border-bottom: 1px solid #ccc;    padding-bottom: 10px;    margin-bottom: 10px;}
 .cricketorList{ height: 50px; background: #c51d23;box-shadow: 2px 2px 2px #ccc; position: relative; }
 .cricketTitle{border-bottom:2px solid #fff;bottom: 0;width: 100%;left: 0; color: #fff;position: absolute }
-.cricketTitle h4{font-weight: normal; padding-left: 8px;}
+.cricketTitle h4{font-weight: normal; padding-left: 22px; padding-bottom: 2px;}
 .matchListContainer{background: #fff;width: 50%;max-height: 900px;min-height: 867px;overflow: auto; }
 .filterSeries{text-transform: uppercase;font-size: 11px;}
 table, th, td {
@@ -78,6 +78,7 @@ md-tab-group {
         margin-bottom: 10px;
         border-bottom: 1px solid #d8d7d7;
         padding-bottom: 10px;
+        margin-left: 4px;
     }
     .modal-backdrop {
         position: fixed;
@@ -205,6 +206,67 @@ md-tab-group {
     .selectedCountThree{position: relative; top: -49px;left: -36px;;}
     .selectedCountFour{position: relative; top: -49px;left: 48px;}
     .selectedCountFive{position: relative; top: -49px;left:131px;}
+.addIcon{background: url(../src/assets/images/add.png)0 0 no-repeat; padding: 5px 17px;}
+.addIcon:hover{background: url(../src/assets/images/remove.png)0 0 no-repeat; padding: 5px 17px;}
+.progress{height: 23px;}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 18px;
+  }
+  
+  .switch input {display:none;}
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+   /* Rounded sliders  */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+.lightGrey{background: #c1c1c1;position: relative;bottom: 52px;height: 48px;text-align: center;font-weight: bold;}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body{font-size: 13px;}

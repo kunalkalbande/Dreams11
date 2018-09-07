@@ -7,7 +7,8 @@ import { matchPlayers } from '../models/matchPlayer';
 import { HttpErrorResponse, HttpClient, HttpHeaders } from '@angular/common/http';
 import { LoginInfo } from '../models/LoginInfo'
 import { RequestOptions } from '@angular/http';
-
+import { Router,NavigationExtras} from '@angular/router';
+import { UserdataModule } from "../models/userdata/userdata.module";
 export class loginDetails{
 UserName:string 
 Password:String
@@ -31,20 +32,17 @@ export class LoginComponent implements OnInit {
   count: any;
   login: any;
   matchInfo: matchInfo;
-  
-  constructor(private http: HttpClient) { }
+  user : {};
+  constructor(private http: HttpClient,private router: Router,private data: UserdataModule) { }
   // allMatches: allMatches[];
   matchPlayers: matchPlayers[];
-
-
- 
 
   ngOnInit() {
     
   }
 
   onSubmit(form): void {
-    debugger;
+  
     let LoginData: LoginInfo = {} as any;
     LoginData.UserName = "avi";
     LoginData.Password="test";
@@ -61,17 +59,15 @@ export class LoginComponent implements OnInit {
     .subscribe(
 
       data => {
-
          debugger;
-           console.log(data);
+           console.log(this.user=data);
+           this.data.storage=this.user;
+           this.router.navigate(["contestList"])
           },
       err => {
         debugger;
         console.log(err);
       },
-      // err => {
-      //   console.log(err);
-      // }
     );
 
     }

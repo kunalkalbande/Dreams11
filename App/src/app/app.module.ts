@@ -31,9 +31,11 @@ import {ProgressBarModule} from 'primeng/progressbar';
 
 import {CheckboxModule} from 'primeng/checkbox';
 
-import { FormsModule }    from '@angular/forms';
+import { FormsModule,ReactiveFormsModule }    from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { UserdataModule } from "../app/models/userdata/userdata.module";
+import { UsercontestComponent } from './usercontest/usercontest.component';
+import { ViewteamComponent } from './viewteam/viewteam.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +48,8 @@ import { HttpClientModule } from '@angular/common/http';
     CaptainCreatorComponent,
     TeamSelectionComponent,
     ContestListComponent,
+    UsercontestComponent,
+    ViewteamComponent,
     // MyFilterPipe
   ],
   imports: [
@@ -58,13 +62,13 @@ import { HttpClientModule } from '@angular/common/http';
     TableModule,
     ProgressBarModule,
     CheckboxModule,
-    FormsModule
+    FormsModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   exports: [TabViewModule, AccordionModule, SharedModule, TableModule,ProgressBarModule,CheckboxModule],
 
 
   bootstrap: [AppComponent],
-  providers: []
+  providers: [UserdataModule]
 })
 export class AppModule { }

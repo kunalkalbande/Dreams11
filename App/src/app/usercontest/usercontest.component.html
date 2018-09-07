@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-xs-12 cricketorTeamList">
+      <a routerLink="/dashboard">
+        <span class="fas fa-arrow-left arrowLeft"></span>
+      </a>
+      <div class="cricketTeamTitle">
+        <h4>CONTEST DETAILS</h4>
+      </div>
+    </div>
+  </div>
+  <div class="matchListContainer col-md-6 col-xs-12">
+    <div class="row">
+      <div class="card1 item-text-wrap">
+        <div class="card1-body">
+          <div class="row borderBtmusercontest" *ngFor="let ucontest of usercontests">
+            <div class=" col-md-1 col-xs-12">
+              <img width="50px" height="50px" src="https://s3.amazonaws.com/pwaimages/public/imgs/pwa_default_user_avatar.png">
+            </div>
+            <div class="col-md-2 col-xs-12"></div>
+            <div style="height: 57px"></div>
+            <div class="col-md-8 col-xs-12" [routerLink]="[/viewteam,ucontest.username]">{{ucontest.username}}({{ucontest.teamname}})</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- <div class="row">
+    <div class="row borderBtm" *ngFor="let ucontest of usercontests">
+      <div class="col-md-2 col-xs-12">
+        <img width="50px" height="50px" src="https://s3.amazonaws.com/pwaimages/public/imgs/pwa_default_user_avatar.png">
+      </div>
+      <div class="col-md-6 col-xs-12"></div>
+      <div>{{ucontest.username}}({{ucontest.teamname}})</div>
+    </div>
+</div> -->

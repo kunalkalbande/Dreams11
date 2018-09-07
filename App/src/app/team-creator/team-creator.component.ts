@@ -13,9 +13,6 @@ import { matchPlayers } from '../models/matchPlayer'
 import { Observable } from 'rxjs/internal/Observable';
 import { count } from 'rxjs/operators';
 
-
-
-
 @Component({
   selector: 'app-team-creator',
   templateUrl: './team-creator.component.html',

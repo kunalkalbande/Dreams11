@@ -1,80 +1,125 @@
 <div class="container">
-<div class="row">
-<div class="col-md-6 col-xs-12 cricketorList">
-<div class="cricketTitle">
-<h4> CRICKET</h4> 
-</div>
+  <div class="row">
+    <div class="col-md-6 col-xs-12 cricketorList">
+      <div class="cricketTitle">
+        <h4> CRICKET</h4>
+      </div>
 
-</div>
-</div>
+    </div>
+  </div>
 
 
-<div class="matchListContainer col-md-6 col-xs-12 ">
-  <div class="col-md-12 row" style="padding: 11px 0;">
-<div class="col-md-6 "> Pick an Upcoming Match </div>
-<div class="col-md-6  text-right "><a href="" class="filterSeries"  data-toggle="modal" data-target="#myModal">Filter By Series</a></div>
-</div>
-<div class="card">
-    
-    <div class="card-body">
-
-<div *ngIf="listMatch">
-  <div  class="row borderBtm" *ngFor="let match of listMatch" >
-    <div class="col-md-4"  >
-    <div   class="lazy-loader lazy-loader--loaded"  style="height: auto; width:100%"   >
-      <a  routerLink="/cricketTeam">  <img src="{{match.Teamlogs[0].TeamLogs}}" width="70" height="70"/></a>
+  <div class="matchListContainer col-md-6 col-xs-12 ">
+    <div class="col-md-12 row" style="padding: 11px 0;">
+      <div class="col-md-6 "> Pick an Upcoming Match </div>
+      <div class="col-md-6  text-right ">
+        <a href="" class="filterSeries" data-toggle="modal" data-target="#myModal">Filter By Series</a>
       </div>
     </div>
-      
-      <div class="matchCardInfo_9f857 col-md-4" style="vertical-align: middle;top: 16px;">
-       <div class="tourNameLabel_d619f col-xs-12" >{{match.SeriesName}} </div>
-       <div class="timer__text col-xs-12">
-        <div>{{match.TImeSlot}}</div>
-       </div>
-    
-   </div>
-   
-   <div class="col-md-4" >
-    <div class="lazy-loader lazy-loader--loaded" style="height: auto; width: 100%;"  >
-        <img src="{{match.Teamlogs[1].TeamLogs}}"  width="70" height="65" class="img"/></div>
-     </div>
-     </div>
-     </div>
+    <div class="card">
+
+      <div class="card-body">
+
+        <div *ngIf="listMatch">
+          <div class="row borderBtm" *ngFor="let match of listMatch">
+            <div class="col-md-4">
+              <div class="lazy-loader lazy-loader--loaded" style="height: auto; width:100%">
+                <a routerLink="/cricketTeam">
+                  <img src="{{match.Teamlogs[0].TeamLogs}}" width="70" height="70" />
+                </a>
+              </div>
+            </div>
+
+            <div class="matchCardInfo_9f857 col-md-4" style="vertical-align: middle;top: 16px;">
+              <div class="tourNameLabel_d619f col-xs-12">{{match.SeriesName}} </div>
+              <div class="timer__text col-xs-12">
+                <div>{{match.TImeSlot}}</div>
+              </div>
+
+            </div>
+
+            <div class="col-md-4">
+              <div class="lazy-loader lazy-loader--loaded" style="height: auto; width: 100%;">
+                <img src="{{match.Teamlogs[1].TeamLogs}}" width="70" height="65" class="img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
+<div class="row">
+  <div>
+    <div class="bottom-nav js--bottom-nav wrapper_b8e60 col-md-4 col-xs-12" style="width: 570px;">
+      <div >
+        <div class="bottom-nav__content" >
+          <a class="bottom-nav__element bottom-nav__element--active" href="/leagues">
+            <div class="bottom-nav__element__icon">
+              <i class="material-icons">home</i>
+            </div>
+            <div class="bottom-nav__element__content__text">Home</div>
+          </a>
+    
+          <a class="bottom-nav__element" href="/contestList">
+            <div class="bottom-nav__element__icon">
+              <i class="material-icons">star</i>
+            </div>
+            <div class="bottom-nav__element__content__text">My Contests</div>
+          </a>
+    
+          <a class="bottom-nav__element" href="/login">
+            <div class="bottom-nav__element__icon">
+              <i class="material-icons">person</i>
+            </div>
+            <div class="bottom-nav__element__content__text">Me</div>
+          </a>
+    
+          <a class="bottom-nav__element" href="/more">
+            <div class="bottom-nav__element__icon">
+              <i class="material-icons">more_horiz</i>
+            </div>
+            <div class="bottom-nav__element__content__text">More</div>
+          </a>
+    
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="modal" id="myModal">
+  </div>
+    <div class="modal" id="myModal">
       <div class="modal-dialog">
         <div class="modal-content">
-        
+
           <!-- Modal Header -->
           <div class="modal-header">
             <h4 class="modal-title">All Series</h4>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
-          
+
           <!-- Modal body -->
           <div class="modal-body">
 
-            <div class="row" *ngFor="let match of listMatch" style="padding: 10px 0;border-bottom: 1px solid #ccc;">           
-             <div class="col-md-6">
-             {{match.SeriesName}} 
-             </div>
-         <div class="col-md-6">
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1"></div>
-         </div>
-        </div>
+            <div class="row" *ngFor="let match of listMatch" style="padding: 10px 0;border-bottom: 1px solid #ccc;">
+              <div class="col-md-6">
+                {{match.SeriesName}}
+              </div>
+              <div class="col-md-6">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                </div>
+              </div>
+            </div>
           </div>
-          
+
           <!-- Modal footer -->
           <div class="modal-footer">
             <button type="button" class="btn btn-danger" data-dismiss="modal">APPLY</button>
           </div>
-          
+
         </div>
       </div>
     </div>
+  </div>
 </div>
-</div>
+
+<!-- Dream11 -->
+

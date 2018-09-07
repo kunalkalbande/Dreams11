@@ -1,0 +1,111 @@
+<div class="rowimg">
+  <div class="content_60710">
+    <!-- <img src="https://assets.dream11.com/public/imgs/cricket-artwork.svg" /> -->
+    <div class="content">
+      <div *ngFor="let uname of player">
+        <h1>{{uname.username}}</h1>
+
+      </div>
+      <!-- <div class="content">
+        <div class="btn btn--icon">
+            <i class="material-icons">cancel</i>
+        </div>
+        </div> -->
+
+      <div class="divheight"></div>
+      <div class="content">
+        <div style="text-align: center">
+          WICKET-KEEPER
+        </div>
+      </div>
+      <div *ngFor="let userplayer of player[0].players | playerFilterByRole:'Wicketkeeper'">
+        <div class="content">
+          <div style="text-align: center">
+            <div class="img-circle">
+              <img src="{{userplayer.playerimage}}" width="67" height="67" style="border-radius:50%" />
+            </div>
+            <div>
+              {{userplayer.FirstName}}{{userplayer.LastName}}
+            </div>
+            <div>
+              {{userplayer.Points}} PTS
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divheight1"></div>
+      <div class="content">
+        <div style="text-align: center">
+          BATSMAN
+        </div>
+      </div>
+      <div *ngFor="let playerbastman of player[0].players | playerFilterByRole:'Batsman'">
+        <div class="content">
+          <div style="margin-left: 90px;float: left;">
+            <div class="img-circle">
+              <img src="{{playerbastman.playerimage}}" width="67" height="67" style="border-radius:50%" />
+            </div>
+            <div>
+              {{playerbastman.FirstName}}{{playerbastman.LastName}}
+            </div>
+            <div>
+              {{playerbastman.Points}} PTS
+            </div>
+          </div>
+         
+        </div>
+      </div>
+
+      <div class="divheight2"></div>
+      <div class="content">
+        <div style="text-align: center">
+          ALL-ROUNDERS
+        </div>
+      </div>
+      <div *ngFor="let playerallrounder of player[0].players | playerFilterByRole:'AllRounder'">
+        <div class="content">
+          <div style="margin-left: 150px;float: left;">
+            <div class="img-circle">
+              <img src="{{playerallrounder.playerimage}}" width="67" height="67" style="border-radius:50%" />
+            </div>
+            <div>
+              {{playerallrounder.FirstName}}{{playerallrounder.LastName}}
+            </div>
+            <div>
+              {{playerallrounder.Points}} PTS
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+
+      <div class="divheight3"></div>
+      <div class="content">
+        <div style="text-align: center">
+          BOWLERS
+        </div>
+      </div>
+      <div *ngFor="let blower of player[0].players | playerFilterByRole:'Blower'">
+        <div class="content">
+          <div style="margin-left: 90px;float: left;">
+            <div class="img-circle">
+              <img src="{{blower.playerimage}}" width="67" height="67" style="border-radius:50%" />
+            </div>
+            <div>
+              {{blower.FirstName}} {{blower.LastName}}
+            </div>
+            <div>
+              {{blower.Points}} PTS
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
